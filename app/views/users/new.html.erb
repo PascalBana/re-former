@@ -1,0 +1,12 @@
+<h1>Please enter your information into the form below</h1>
+
+
+<%= form_with model: @user do |form| %>
+  <%= form.label :username, "Your username here" %>
+  <%= form.text_field :username, placeholder: "Username" %>
+  <%= form.label :email, "email"%>
+  <%= form.text_field :email %>
+  <%= form.label :password, "password"%>
+  <%= form.password_field :password%>
+  <%= form.submit "submit"%>
+<% end %>
